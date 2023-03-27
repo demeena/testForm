@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form
+  action="https://formspree.io/f/xvonbjwb"
+  method="POST"
+>
+        <label for="">
+            Ваше имя:
+            <input type="text" name="name" id="name" placeholder="Иванов Иван" required autofocus pattern="[А-Яа-яЁё]{4,}"  title="Имя должно быть на русском и состоять из букв Пример: Иван">
+        </label>
+
+        <label for="">
+            email:
+            <input type="email" name="email" id="email" placeholder="ivanov@ivan.ru" required autofocus>
+        </label>
+
+        <label for="userPassword">
+            Пароль:
+            <input type="password" name="userPassword" id="userPassword"   required autofocus>
+
+            <div class="error-message"></div>
+            <button id="visibility" class="visibility">показать пароль</button>
+        </label>
+n
+        <label for="confirmationPassword">
+             Повторите пароль:
+            <input type="password" name="confirmationPassword" class="confirmationPassword"  required autofocus>
+            <div class="error-messageСonfirmation .error-message"></div>
+        </label>
+        
+        <button>Отправить форму</button>
+    </form>
+    
+</body>
+<script src="script.js"></script>
+<script src="app.js"></script>
+</html>
+
